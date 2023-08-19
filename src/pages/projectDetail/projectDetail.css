@@ -1,0 +1,25 @@
+.projectDetail__contentWrap{
+    margin:0px 20%;
+}
+.projectDetail__techGrid{
+    display: grid;
+    width: 100%;
+    gap: 5px;
+    row-gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.projectDetail__back{
+    font-size: 40px;
+    color: #000000;
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    
+}
+
+.projectDetail__back:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 500ms;
+}
