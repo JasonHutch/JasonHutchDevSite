@@ -23,6 +23,11 @@ body{
   margin:0px;
 }
 
+p{
+  color: black;
+  margin: 0px;
+}
+
 #root {
   height: 100%;
   text-align: center;

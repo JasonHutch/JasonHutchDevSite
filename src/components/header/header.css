@@ -4,19 +4,30 @@
     background-color: #292A2D;
     display: flex;
     justify-content: center;
+    position:fixed;
+    z-index: 1;
 }
 
 .header__links{
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
-.header__links li{
+@media (max-width: 1024px){
+    .header__links{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+.header__links a{
     margin-right: 50px;
-    list-style: none;
+    text-decoration: none;
 }
 
 .header__link{
     color: #ffffff;
     text-decoration: none;
+    font-weight: 700;
 }

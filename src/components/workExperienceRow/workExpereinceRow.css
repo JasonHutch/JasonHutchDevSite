@@ -1,0 +1,13 @@
+.workExperienceRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.workExperienceRow__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}

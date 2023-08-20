@@ -1,0 +1,106 @@
+.aboutAlt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px 30%;
+}
+.aboutAlt__contentWrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.aboutAlt__leftContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+.aboutAlt__rightContent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width:1024px){
+    .aboutAlt__leftContent{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .aboutAlt__rightContent{
+        width: 100%;
+    }
+}
+.aboutAlt__rightContentWrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aboutAlt__leftContentGrid{
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.aboutAlt__titleWrap {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.aboutAlt__aboutText{
+    color: #000000;
+    text-align: left;
+}
+.aboutAlt__grid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+.aboutAlt__horizontalDivider{
+    width: 1px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.aboutAlt__aboutMe{
+    display: flex;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1024px) {
+    .aboutAlt__aboutMe{
+       flex-direction: column;
+    }
+}
+
+.aboutPage__experience{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about__projectsgrid{
+    margin:0px 10%;
+    justify-content: center;
+    display: grid;
+    gap: 50px;
+    row-gap: 30px;
+    grid-template-columns: 33% 33% 33%;
+    margin-bottom: 8rem;
+}
+@media (max-width: 1024px) {
+    .about__projectsgrid{
+        display: grid;
+        gap: 50px;
+        row-gap: 30px;
+        grid-template-columns: 100%;
+        margin-bottom: 8rem;
+    }
+  }

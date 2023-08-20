@@ -1,0 +1,17 @@
+.headerTitle {
+    display: flex;
+    justify-content: start;
+}
+
+@media (max-width: 1024px) {
+    .headerTitle {
+        display: flex;
+        justify-content: center;
+    }
+}
+.headerTitle h2 {
+    color: black;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 5%;
+}

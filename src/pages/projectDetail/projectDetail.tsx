@@ -11,13 +11,13 @@ const ProjectDetail = () => {
     return (
         <div className="projectDetail">
             <div className="projectDetail__contentWrap">
-                <div style={{display:'flex', alignItems:'start', justifyContent:'start', marginTop:'10%'}}>
-                    <Link onClick={() => navigate(-1)} to={""}>
+                <div className="projectDetail__header">
+                    <Link onClick={() => navigate(-1)} to={""} style={{marginBottom:'2rem'}}>
                         <IoMdArrowRoundBack className='projectDetail__back'/>
                     </Link>
                     <div style={{display:'flex', justifyContent:'start', flexDirection:'column', alignItems:'start'}}>
-                        <p style={{ color: '#000000', fontSize: '3rem', margin:'0px 0px' }}>Compliance Workflow</p>
-                        <p style={{ color: '#000000', fontSize: '1.5rem', margin:'0px 0px' }}>2023</p>
+                        <p className="projectDetail__title">Compliance Workflow</p>
+                        <p className="projectDetail__subtitle">2023</p>
                     </div>
                 </div>
                 

@@ -4,6 +4,7 @@ import Header from "../../components/header/header";
 
 import './layout.css';
 import React from "react";
+import AboutPageAlt from "../aboutAlt/aboutPageAlt";
 
 const Layout = () => {
     const [pathname, setPathname] = React.useState(window.location.pathname);
@@ -16,11 +17,11 @@ const Layout = () => {
     return (
         <div className="layout">
             <header>
-                <Header handleNavigation={handleNavigation}/>
+                <Header/>
             </header>
             <div className="layout__content">
                 {
-                    pathname === "/" ? <Homepage/> : <Outlet/>
+                    pathname === "/" ? <AboutPageAlt/> : <Outlet/>
                 }
             </div>
         </div>

@@ -12,12 +12,10 @@ const ProjectsPage = () => {
                     <ProjectCard/>
                     <ProjectCard/>
                     <ProjectCard/>
-
                     <ProjectCard/>
                     <ProjectCard/>
                     <ProjectCard/>
                 </div>
-
             </div>
         </div>
     );

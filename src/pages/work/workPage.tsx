@@ -1,7 +1,15 @@
+import WorkExperienceRow from "../../components/workExperienceRow/workExperienceRow";
+import './workPage.css';
+
 const WorkPage = () => {
     return (
-        <div>
-            <h1>Work</h1>
+        <div style={{display:'flex', justifyContent:'center', alignItems:'center', width:'100%', height:'100%'}}>
+            <div className="workpage__contentWrap">
+                <WorkExperienceRow/>
+                <WorkExperienceRow/>
+                <WorkExperienceRow/>
+                
+            </div>
         </div>
     );
 };
