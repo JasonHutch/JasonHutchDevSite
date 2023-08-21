@@ -45,13 +45,12 @@ const ProjectDetail = () => {
                 <div style={{display:'flex', flexDirection:'column', justifyContent:'start', alignItems:'start', marginTop:'5%'}}>
                     <p style={{ color: '#000000', fontSize: '1.5rem', fontWeight:'700', margin:'0px 0px', marginBottom:'10px' }}>Technology Used</p>
                     <div className="projectDetail__techGrid">
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
-                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
+                        <TechLabel title ="Typescript" icon={<BiLogoTypescript size={30} style={{color:'#000000',marginRight:'10px'}}/>}/>
                     </div>
 
                 </div>

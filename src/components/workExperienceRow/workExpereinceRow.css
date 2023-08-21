@@ -3,7 +3,35 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 5rem;
+  padding: 0px 5%;
 }
+
+.workExperienceRow__description {
+  width: 50%;
+}
+
+.workExperienceRow__description li {
+  color: #000000;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .workExperienceRow__description {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .workExperienceRow {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
 
 .workExperienceRow__details {
   display: flex;

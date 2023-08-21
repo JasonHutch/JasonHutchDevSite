@@ -1,15 +1,29 @@
 import './workExpereinceRow.css';
-
-const WorkExperienceRow = () => {
+export interface IWorkExperienceRowProps {
+    position: string;
+    company: string;
+    startDate: string;
+    endDate: string;
+    description: string[];
+}
+const WorkExperienceRow = (props:IWorkExperienceRowProps) => {
     return (
         <div className="workExperienceRow">
             <div className='workExperienceRow__details'>
-                <p style={{fontSize:'1.5rem', fontWeight:'700', textAlign:'left'}}>Senior Software Engineer</p>
-                <p style={{fontSize:'1rem', textAlign:'left'}}>Rightpoint</p>
-                <p style={{fontSize:'1rem', textAlign:'left', color:'rgba(0,0,0,0.5)'}}>Jan 2022 - Present</p>
+                <p style={{fontSize:'1.5rem', fontWeight:'700', textAlign:'left'}}>{props.position}</p>
+                <p style={{fontSize:'1rem', textAlign:'left'}}>{props.company}</p>
+                <p style={{fontSize:'1rem', textAlign:'left', color:'rgba(0,0,0,0.5)'}}>{props.startDate} - {props.endDate}</p>
             </div>
-            <div style={{width:'50%'}}>
-                <p style={{textAlign:'left'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt libero eu est dignissim dignissim. Nam hendrerit finibus neque eu porttitor. Suspendisse malesuada enim quis dolor imperdiet, ut condimentum lacus lacinia. In a ornare </p>
+            <div className='workExperienceRow__description'>
+                <ul>
+                    {
+                        props.description.map((desc) => {
+                            return (
+                                <li>{desc}</li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
         </div>
     );

@@ -2,16 +2,22 @@
     display: flex;
     justify-content: start;
 }
+.headerTitle h2 {
+    color: black;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 5%;
+}
 
 @media (max-width: 1024px) {
     .headerTitle {
         display: flex;
         justify-content: center;
     }
-}
-.headerTitle h2 {
-    color: black;
-    font-size: 3rem;
-    text-align: left;
-    margin-left: 5%;
+    .headerTitle h2 {
+        color: black;
+        font-size: 2rem;
+        text-align: left;
+        margin-left: 5%;
+    }
 }

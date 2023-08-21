@@ -10,12 +10,12 @@ const ProjectCard = () => {
         <Link to="/projects/1" style={{textDecoration:'none'}}>
             <div className="projectCard">
             <div style={{display:'flex', flexDirection:'row'}}>
-                <div>
+                <div className='projectCard__imgWrap'>
                     <img src="https://picsum.photos/75"/>
                 </div>
-                <div style={{display:'flex', flexDirection:'column', marginLeft:'1rem'}}>
-                    <p style={{color:'#000000', fontSize:'1.5rem', fontWeight:'600', textAlign:'start', margin:'0px'}}>Project Title</p>
-                    <p style={{color:'rgba(0,0,0,.5)', fontSize:'1rem', width:'230px', textAlign:'start',margin:'0px'}}>2023</p>
+                <div className="projectCard__textWrap">
+                    <p className='projectCard__title'>Project Title</p>
+                    <p className='projectCard__subtitle'>2023</p>
                 </div>
             </div>
 

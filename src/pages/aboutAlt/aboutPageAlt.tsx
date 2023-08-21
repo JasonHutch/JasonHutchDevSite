@@ -12,16 +12,28 @@ import Title from '../../components/title/title';
 import Homepage from '../homepage/homepage';
 import Header from '../../components/header/header';
 import '../layout/layout.css'
+import { ATTRIBUTES, CERTIFICATIONS, LANGUAGES, TOOLS, WORKEXPERIENCE } from '../../Config';
+import { IWorkExperience } from '../../models/IWorkExperience';
 
 
 const AboutPageAlt = () => {
 
-    const languages = ['Typescript', 'C#', 'Python', 'Java', 'HTML', 'CSS', 'SQL'];
-    const tools = ['.NET Core', 'React', 'Docker', 'Synapse Analytics', 'PySpark', 'Pandas'];
-    const certs = ['Microsoft Certified: Azure AI Fundamentals', 'Microsoft Certified: Azure AI Fundamentals'];
+    const getIcon = (icon:string) => {
+        switch (icon) {
+            case 'fire':
+                return <AiOutlineFire size={50} style={{ color: '#000000' }} />
+            case 'smile':
+                return <LiaSmileBeam size={50} style={{ color: '#000000' }} />
+            case 'code':
+                return <BsCodeSlash size={50} style={{ color: '#000000' }} />
+            case 'magic':
+                return <MdOutlineAutoFixHigh size={50} style={{ color: '#000000' }} />
+            default:
+                return <AiOutlineFire size={50} style={{ color: '#000000' }} />
+        }
+    }
+
     return (
-
-
         <div className="layout">
             <header>
                 <Header />
@@ -35,9 +47,19 @@ const AboutPageAlt = () => {
 
                         <Title id="WorkExperience" title='Work Experience' />
                         <div className='aboutPage__experience'>
-                            <WorkExperienceRow />
-                            <WorkExperienceRow />
-                            <WorkExperienceRow />
+                            {
+                                WORKEXPERIENCE.map((experience:IWorkExperience) => {
+                                    return (
+                                        <WorkExperienceRow 
+                                            position={experience.position}
+                                            company={experience.company}
+                                            startDate={experience.dateStart}
+                                            endDate={experience.dateEnd}
+                                            description={experience.description}
+                                        />
+                                    )
+                                })
+                            }
                         </div>
                         <Title id="AboutMe" title='About Me' />
                         <div className="aboutAlt__aboutMe">
@@ -46,7 +68,7 @@ const AboutPageAlt = () => {
                                     <p style={{ color: '#000000', fontSize: '1.5rem' }}>Languages</p>
                                     <div className='aboutAlt__grid'>
                                         {
-                                            languages.map((langauge) => {
+                                            LANGUAGES.map((langauge) => {
                                                 return (
                                                     <Tag title={langauge} />
                                                 )
@@ -58,9 +80,9 @@ const AboutPageAlt = () => {
                                     <p style={{ color: '#000000', fontSize: '1.5rem' }}>Tools</p>
                                     <div className='aboutAlt__grid'>
                                         {
-                                            tools.map((langauge) => {
+                                            TOOLS.map((tool) => {
                                                 return (
-                                                    <Tag title={langauge} />
+                                                    <Tag title={tool} />
                                                 )
                                             })
                                         }
@@ -68,9 +90,9 @@ const AboutPageAlt = () => {
                                 </div>
                                 <div className="aboutAlt__leftContentGrid">
                                     <p style={{ color: '#000000', fontSize: '1.5rem' }}>Certifications</p>
-                                    <div className='aboutAlt__grid'>
+                                    <div className='aboutAlt__grid-OneCol'>
                                         {
-                                            certs.map((cert) => {
+                                            CERTIFICATIONS.map((cert) => {
                                                 return (
                                                     <Tag title={cert} />
                                                 )
@@ -82,11 +104,13 @@ const AboutPageAlt = () => {
                             </div>
                             <div className="aboutAlt__rightContent">
                                 <div className='aboutAlt__rightContentWrap'>
-                                    <AttributeRow title="Solution Oriented" description='I’m always looking to move forward. I believe that feedback is king and work with a fail fast mentality.' icon={<MdOutlineAutoFixHigh size={50} style={{ color: '#000000' }} />} />
-                                    <AttributeRow title="Self Starter" description='II find my initiative is driven by curiosity and manifests in getting results quicker' icon={<AiOutlineFire size={50} style={{ color: '#000000' }} />} />
-                                    <AttributeRow title="Foolishly Optimistic" description='Attitude is contagious and my goal in work and life is to inspire those around me by kicking ass with a big ol smile on my face.' icon={<LiaSmileBeam size={50} style={{ color: '#000000' }} />} />
-                                    <AttributeRow title="Learns By Doing" description='I believe the  best way to learn something is to try things and make mistakes.' icon={<BsCodeSlash size={50} style={{ color: '#000000' }} />} />
-                                    <AttributeRow title="Dedication To Professionalism" description='I’m always looking to move forward. I believe that feedback is king and work with a fail fast mentality.' icon={<MdOutlineAutoFixHigh size={50} style={{ color: '#000000' }} />} />
+                                    {
+                                        ATTRIBUTES.map((attribute) => {
+                                            return (
+                                                <AttributeRow title={attribute.title} description={attribute.description} icon={getIcon(attribute.icon)} />
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
