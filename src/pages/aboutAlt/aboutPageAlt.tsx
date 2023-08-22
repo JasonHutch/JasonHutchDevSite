@@ -45,7 +45,8 @@ const AboutPageAlt = () => {
                             <Homepage />
                         </div>
 
-                        <Title id="WorkExperience" title='Work Experience' />
+                        <div id="WorkExperience" className='anchor'></div>
+                        <Title id="" title='Work Experience' />
                         <div className='aboutPage__experience'>
                             {
                                 WORKEXPERIENCE.map((experience:IWorkExperience) => {
@@ -61,7 +62,8 @@ const AboutPageAlt = () => {
                                 })
                             }
                         </div>
-                        <Title id="AboutMe" title='About Me' />
+                        <div id="AboutMe" className='anchor'></div>
+                        <Title id="" title='About Me' />
                         <div className="aboutAlt__aboutMe">
                             <div className="aboutAlt__leftContent">
                                 <div className="aboutAlt__leftContentGrid">
@@ -118,7 +120,8 @@ const AboutPageAlt = () => {
                                 </div>
                             </div>
                         </div>
-                        <Title id="Projects" title='Projects' />
+                        <div id="Projects" className='anchor'></div>
+                        <Title id="" title='Projects' />
                         <div className="about__projectsgrid">
                             {
                                 PROJECTS.map((project) => {

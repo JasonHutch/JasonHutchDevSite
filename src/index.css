@@ -20,10 +20,15 @@
   overflow-x: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   height: 100%;
   margin:0px;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 p{

@@ -3,4 +3,5 @@ export interface IProject {
     description: string;
     year: string;
     responsibilities: string[];
+    technologies: string[];
 }

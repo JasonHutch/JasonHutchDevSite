@@ -10,7 +10,7 @@ export interface IAttributeProps {
 const AttributeRow = (props:IAttributeProps) => {
     return (
         <div className="attributeRow">
-            <div style={{marginRight:'1rem'}}>
+            <div className="attributeRow__imgWrap">
                 {props.icon}
             </div>
             <div style={{width:'100%'}}>

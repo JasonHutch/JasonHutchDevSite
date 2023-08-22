@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0px 30%;
+    margin: 0px 15%;
 }
 .aboutAlt__contentWrap {
     display: flex;
@@ -138,3 +138,5 @@
         margin-bottom: 8rem;
     }
   }
+
+  div.anchor{display: block; position: relative; top: -100px; visibility: hidden;}

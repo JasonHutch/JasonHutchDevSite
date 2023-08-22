@@ -1,5 +1,7 @@
 import './homepage.css';
-import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
+import { AiFillLinkedin} from "react-icons/ai";
+import { IoMdMail } from "react-icons/io";
+
 import image from '../../../src/assets/headshot.jpg'
 
 const Homepage = () => {
@@ -14,9 +16,14 @@ const Homepage = () => {
                     <span style={{color:'rgba(0,0,0,.5)'}}>Software Developer | Designer | Entrepreneur</span>
                 </div>
                 <div style={{marginTop:'1.5rem'}}>
-                    <AiFillGithub style={{fontSize:'2rem',  color:'black'}}/>
-                    <AiFillInstagram style={{fontSize:'2rem', color:'black', marginRight:'10px',marginLeft:'10px'}}/>
-                    <AiFillLinkedin style={{fontSize:'2rem', color:'black'}}/>
+                    <a href='mailto:Jasonr.hutchii@gmail.com'>
+                        <IoMdMail style={{fontSize:'2rem', color:'black', marginRight:'10px',marginLeft:'10px'}}/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/hutch-ii/'>
+                        <AiFillLinkedin style={{fontSize:'2rem', color:'black'}}/>
+                    </a>
+                   
+                   
                 </div>
             </div>
 

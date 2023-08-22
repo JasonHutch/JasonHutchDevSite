@@ -32,7 +32,7 @@ export const WORKEXPERIENCE: IWorkExperience[] = [
             "Organzed and delivered internal presentations on new technologies and development techniques.",
         ],
         dateStart: 'Jan 2021',
-        dateEnd: 'Jan 2023'
+        dateEnd: 'Jan 2022'
     },
     {
         position: 'Associate Developer',
@@ -80,12 +80,12 @@ export const ATTRIBUTES:IAttribute[] = [
     },
     {
         title:"Self Starter",
-        description:"I find my initiative is driven by curiosity and manifests in getting results quicker.",
+        description:"My initiative is driven by curiosity and manifests in getting results quicker.",
         icon:"fire"
     },
     {
-        title:"Foolishly Optimistic",
-        description:"Attitude is contagious and my goal in work and life is to inspire those around me by kicking ass with a big ol smile on my face.",
+        title:"Leads By Example",
+        description:"Attitude is contagious and my goal in work and life is to inspire those around me by giving it my all with a big ol smile on my face.",
         icon:"smile"
     },
     {
@@ -97,6 +97,16 @@ export const ATTRIBUTES:IAttribute[] = [
 
 export const PROJECTS:IProject[] = [
     {
+        name:"Abbott Migration and Modernization",
+        description:"Migrate lists and libraries from SharePoint 2013 to SharePoint Online enviorment.",
+        year:"2023",
+        responsibilities:[
+            "Conduct sprint demos, showcasing the work of the development team",
+            "Own project scaffolding and development of SPFx webparts and extensions",
+        ],
+        technologies:["React","Typescript","ShareGate","SharePoint Online"]    
+    },
+    {
         name:"Power Platform Compliance Workflow",
         description:"Leveraged technologies such as Microsoft Power Apps, Power automate, and SharePoint online lists to design and implement compliance workflow system.",
         year:"2022",
@@ -107,7 +117,8 @@ export const PROJECTS:IProject[] = [
             "Serve as the main point of contact for the development and QA team",
             "Analyze the current state of Power Apps / Automate solution and devise a strategy for upgrading the solution with SharePoint best practices in mind",
             "Provide timely updates on development velocity and assist architect and project manager with communicating timeline updates to the client."
-        ]
+        ],
+        technologies:["Power Apps","Power Automate","SharePoint Online"]
     },
     {
         name:"KPMG SharePoint Migration and Modernization",
@@ -117,7 +128,8 @@ export const PROJECTS:IProject[] = [
             "Perform analysis of SharePoint 2013 sites and determine mitigation strategies for mapping old functionality to new SharePoint Online functionality",
             "Collaborate with visual and UX designers to consult client on how to fiesably implement SharePoint modernization",
             "Facilitate real time working sessions with client to demonstrate SharePoint Online capabilities and gather feedback on design and functionality",
-        ]
+        ],
+        technologies:["SharePoint Online","SharePoint Designer"]
     },
     {
         name:"Comcast Intranet Build",
@@ -127,7 +139,8 @@ export const PROJECTS:IProject[] = [
             "Integrating sharepoint data with custom SPFx web parts through REST API calls and React state management.",
             "Realize component designs using JSX and SCSS, ensuring that the component is responsive and accessible.",
             "Demo new components to client and gather feedback on functionality and design.",
-        ]
+        ],
+        technologies:["React","Typescript","SCSS","SharePoint Online","SPFx","SCSS"]
     },
     {
         name:"Children's Health Hospital Website build",
@@ -137,6 +150,7 @@ export const PROJECTS:IProject[] = [
             "Developed custom Sitecore components using .NET MVC and Sitecore Helix architecture.",
             "Built custom front ends for Sitecore component renderings using Scriban templating language.",
             "Conducted content authoring training sessions with client, teaching them how to configure the new Sitecore components.",
-        ]
+        ],
+        technologies:["C#","Sitecore",".NET MVC","Scriban"]
     }
 ]

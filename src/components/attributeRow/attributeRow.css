@@ -19,8 +19,16 @@
     text-align: start;
 }
 
+.attributeRow__imgWrap{
+    margin-right: 1rem;
+}
 
 @media (max-width: 1024px) {
+    .attributeRow__imgWrap{
+        margin-right: 0rem;
+        margin-bottom: .5rem;
+    }
+
     .attributeRow {
         flex-direction: column;
         justify-content: center;
