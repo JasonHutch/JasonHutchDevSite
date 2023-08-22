@@ -26,6 +26,9 @@
     align-items: center;
     
 }
+.keyAttributes {
+    display: none;
+}
 @media (max-width:1024px){
     .aboutAlt__leftContent{
         width: 100%;
@@ -33,6 +36,9 @@
     }
     .aboutAlt__rightContent{
         width: 100%;
+    }
+    .aboutAlt{
+        margin: 0px 0px;
     }
 }
 .aboutAlt__rightContentWrap{
@@ -69,19 +75,20 @@
 }
 .aboutAlt__grid{
     display: grid;
-    gap: 5px;
-    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
 }
 
 .aboutAlt__grid-OneCol{
     display: grid;
-    gap: 5px;
+    gap: 20px;
     grid-template-columns: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .aboutAlt__grid{
-        grid-template-columns: auto auto auto
+        grid-template-columns: 1fr 1fr 1fr;
+        width:inherit;
     }
 }
 
@@ -98,6 +105,10 @@
 @media (max-width: 1024px) {
     .aboutAlt__aboutMe{
        flex-direction: column;
+       margin: 0px 10%;
+    }
+    .keyAttributes {
+        display: block;
     }
 }
 

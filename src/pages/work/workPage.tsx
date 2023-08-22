@@ -5,10 +5,9 @@ const WorkPage = () => {
     return (
         <div style={{display:'flex', justifyContent:'center', alignItems:'center', width:'100%', height:'100%'}}>
             <div className="workpage__contentWrap">
-                <WorkExperienceRow/>
-                <WorkExperienceRow/>
-                <WorkExperienceRow/>
-                
+                <WorkExperienceRow position={""} company={""} startDate={""} endDate={""} description={[]}/>
+                <WorkExperienceRow position={""} company={""} startDate={""} endDate={""} description={[]}/>
+                <WorkExperienceRow position={""} company={""} startDate={""} endDate={""} description={[]}/>
             </div>
         </div>
     );

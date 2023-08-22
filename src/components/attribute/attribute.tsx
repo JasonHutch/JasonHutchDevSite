@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { IconType } from "react-icons";
 
 export interface IAttributeProps {
     icon: ReactNode;
@@ -14,7 +13,7 @@ const Attribute = (props:IAttributeProps) => {
                 {props.icon}
             </div>
             <div>
-                <p style={{color:'#000000', fontSize:'1.5rem', fontWeight:'600'}}>{props.title}</p>
+                <p style={{color:'#146C94', fontSize:'1.5rem', fontWeight:'600'}}>{props.title}</p>
             </div>
             <div>
                 <p style={{color:'rgba(0,0,0,.5)', fontSize:'1rem', width:'230px'}}>{props.description}</p>

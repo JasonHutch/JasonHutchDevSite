@@ -1,29 +1,24 @@
 import './projectCard.css';
-import { BiLogoTypescript } from "react-icons/bi";
-import { SiMicrosoftsharepoint } from "react-icons/si";
 import { Link } from 'react-router-dom';
+import { IProject } from '../../models/IProject';
 
 
+export interface IProjectCardProps {
+    project:IProject
+}
 
-const ProjectCard = () => {
+const ProjectCard = (props:IProjectCardProps) => {
+    
     return (
-        <Link to="/projects/1" style={{textDecoration:'none'}}>
+        <Link style={{ textDecoration: 'none' }} to={`/projects/${props.project.name}`} state={{project:props.project}}>
             <div className="projectCard">
             <div style={{display:'flex', flexDirection:'row'}}>
-                <div className='projectCard__imgWrap'>
-                    <img src="https://picsum.photos/75"/>
-                </div>
+                
                 <div className="projectCard__textWrap">
-                    <p className='projectCard__title'>Project Title</p>
-                    <p className='projectCard__subtitle'>2023</p>
+                    <p className='projectCard__title'>{props.project.name}</p>
+                    <p className='projectCard__subtitle'>{props.project.year}</p>
                 </div>
             </div>
-
-            <div style={{display:'flex', justifyContent:'start',marginTop:'1rem'}}>
-                <BiLogoTypescript size={40} style={{color:'#000000',marginRight:'10px'}}/>
-                <SiMicrosoftsharepoint size={40} style={{color:'#000000',marginRight:'15px'}}/>
-            </div>
-            
         </div>
         </Link>
         

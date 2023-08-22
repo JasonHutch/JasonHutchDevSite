@@ -12,7 +12,7 @@ import Title from '../../components/title/title';
 import Homepage from '../homepage/homepage';
 import Header from '../../components/header/header';
 import '../layout/layout.css'
-import { ATTRIBUTES, CERTIFICATIONS, LANGUAGES, TOOLS, WORKEXPERIENCE } from '../../Config';
+import { ATTRIBUTES, CERTIFICATIONS, LANGUAGES, PROJECTS, TOOLS, WORKEXPERIENCE } from '../../Config';
 import { IWorkExperience } from '../../models/IWorkExperience';
 
 
@@ -65,7 +65,7 @@ const AboutPageAlt = () => {
                         <div className="aboutAlt__aboutMe">
                             <div className="aboutAlt__leftContent">
                                 <div className="aboutAlt__leftContentGrid">
-                                    <p style={{ color: '#000000', fontSize: '1.5rem' }}>Languages</p>
+                                    <p style={{ color: '#19A7CE', fontSize: '1.5rem', marginBottom:'1rem' }}>Languages</p>
                                     <div className='aboutAlt__grid'>
                                         {
                                             LANGUAGES.map((langauge) => {
@@ -77,7 +77,7 @@ const AboutPageAlt = () => {
                                     </div>
                                 </div>
                                 <div className="aboutAlt__leftContentGrid">
-                                    <p style={{ color: '#000000', fontSize: '1.5rem' }}>Tools</p>
+                                    <p style={{ color: '#19A7CE', fontSize: '1.5rem', marginBottom:'1rem'}}>Tools</p>
                                     <div className='aboutAlt__grid'>
                                         {
                                             TOOLS.map((tool) => {
@@ -89,7 +89,7 @@ const AboutPageAlt = () => {
                                     </div>
                                 </div>
                                 <div className="aboutAlt__leftContentGrid">
-                                    <p style={{ color: '#000000', fontSize: '1.5rem' }}>Certifications</p>
+                                    <p style={{ color: '#19A7CE', fontSize: '1.5rem', marginBottom:'1rem' }}>Certifications</p>
                                     <div className='aboutAlt__grid-OneCol'>
                                         {
                                             CERTIFICATIONS.map((cert) => {
@@ -103,6 +103,10 @@ const AboutPageAlt = () => {
                                 </div>
                             </div>
                             <div className="aboutAlt__rightContent">
+                                <div className='keyAttributes'>
+                                    <Title id="keys" title='Key Attributes' />
+                                </div>
+                                
                                 <div className='aboutAlt__rightContentWrap'>
                                     {
                                         ATTRIBUTES.map((attribute) => {
@@ -116,12 +120,14 @@ const AboutPageAlt = () => {
                         </div>
                         <Title id="Projects" title='Projects' />
                         <div className="about__projectsgrid">
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
-                            <ProjectCard />
+                            {
+                                PROJECTS.map((project) => {
+                                    return (
+                                        <ProjectCard project={project} />
+                                    )
+                                })
+
+                            }
                         </div>
                     </div>
                 </div>

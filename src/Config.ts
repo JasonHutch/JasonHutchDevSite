@@ -1,13 +1,9 @@
-import { MdOutlineAutoFixHigh } from "react-icons/md";
-import { AiOutlineFire } from "react-icons/ai";
-import { LiaSmileBeam } from "react-icons/lia";
-import { BsCodeSlash } from "react-icons/bs";
-
 import { IAttribute } from './models/IAttribute';
+import { IProject } from './models/IProject';
 import {IWorkExperience}  from './models/IWorkExperience';
 export const WORKEXPERIENCE: IWorkExperience[] = [
     {
-        position: 'Senior Software Engineer',
+        position: 'Senior Software Developer',
         company: 'RightPoint',
         description: [
             "Owning the technical design and development of production SharePoint framework solutions.",
@@ -62,12 +58,12 @@ export const LANGUAGES: string[] = [
 ];
 
 export const TOOLS: string[] = [
-    ".NET Core",
-    "SharePoint Framework",
+    ".NET",
+    "SPFx",
     "React",
-    "Azure Services",
+    "Azure",
     "NumPy",
-    "Apache Spark",
+    "Spark",
     "Docker"
 ];
 
@@ -96,5 +92,51 @@ export const ATTRIBUTES:IAttribute[] = [
         title:"Learns By Doing",
         description:"I believe the best way to learn something is to try things and make mistakes.",
         icon:"code"
+    }
+]
+
+export const PROJECTS:IProject[] = [
+    {
+        name:"Power Platform Compliance Workflow",
+        description:"Leveraged technologies such as Microsoft Power Apps, Power automate, and SharePoint online lists to design and implement compliance workflow system.",
+        year:"2022",
+        responsibilities:[
+            "Conduct sprint demos, showcasing the work of the development team",
+            "Create a deploment strategy for Power Platform artifacts throughout dev,qa,uat,and production enviorments",
+            "Oversee deployments, ensuring that the develpment teams latest updates and fixes are sucsessfully deployed to each enviorment",
+            "Serve as the main point of contact for the development and QA team",
+            "Analyze the current state of Power Apps / Automate solution and devise a strategy for upgrading the solution with SharePoint best practices in mind",
+            "Provide timely updates on development velocity and assist architect and project manager with communicating timeline updates to the client."
+        ]
+    },
+    {
+        name:"KPMG SharePoint Migration and Modernization",
+        description:"Migrate lists and libraries from SharePoint 2013 to SharePoint Online enviorment.",
+        year:"2022",
+        responsibilities:[
+            "Perform analysis of SharePoint 2013 sites and determine mitigation strategies for mapping old functionality to new SharePoint Online functionality",
+            "Collaborate with visual and UX designers to consult client on how to fiesably implement SharePoint modernization",
+            "Facilitate real time working sessions with client to demonstrate SharePoint Online capabilities and gather feedback on design and functionality",
+        ]
+    },
+    {
+        name:"Comcast Intranet Build",
+        description:"Build a fleet of custom SPFX webparts to be used in new Comcast Intranet.",
+        year:"2021",
+        responsibilities:[
+            "Integrating sharepoint data with custom SPFx web parts through REST API calls and React state management.",
+            "Realize component designs using JSX and SCSS, ensuring that the component is responsive and accessible.",
+            "Demo new components to client and gather feedback on functionality and design.",
+        ]
+    },
+    {
+        name:"Children's Health Hospital Website build",
+        description:"Built new website for Children's Health Hospital using Sitecore 9.3 and .NET MVC.",
+        year:"2021",
+        responsibilities:[
+            "Developed custom Sitecore components using .NET MVC and Sitecore Helix architecture.",
+            "Built custom front ends for Sitecore component renderings using Scriban templating language.",
+            "Conducted content authoring training sessions with client, teaching them how to configure the new Sitecore components.",
+        ]
     }
 ]

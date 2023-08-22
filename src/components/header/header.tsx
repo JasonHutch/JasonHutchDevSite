@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
@@ -9,7 +8,7 @@ const Header = () => {
                     <p className="header__link">About</p>
                 </a>
                 <a href='#WorkExperience'>
-                    <span className="header__link">Work Experience</span>
+                    <span className="header__link">Experience</span>
                 </a>
                 <a href='#Projects'>
                     <span className="header__link">Projects</span>

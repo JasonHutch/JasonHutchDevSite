@@ -10,7 +10,7 @@ const WorkExperienceRow = (props:IWorkExperienceRowProps) => {
     return (
         <div className="workExperienceRow">
             <div className='workExperienceRow__details'>
-                <p style={{fontSize:'1.5rem', fontWeight:'700', textAlign:'left'}}>{props.position}</p>
+                <p style={{fontSize:'1.5rem', fontWeight:'700', textAlign:'left', color:'#19A7CE'}}>{props.position}</p>
                 <p style={{fontSize:'1rem', textAlign:'left'}}>{props.company}</p>
                 <p style={{fontSize:'1rem', textAlign:'left', color:'rgba(0,0,0,0.5)'}}>{props.startDate} - {props.endDate}</p>
             </div>
