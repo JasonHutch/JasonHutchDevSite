@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
   
-export default function GoToTop() {
+export default function GoToTop():null {
   const routePath = useLocation();
   const onTop = () => {
     console.log('scrolling to top');
