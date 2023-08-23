@@ -14,10 +14,22 @@ import Header from '../../components/header/header';
 import '../layout/layout.css'
 import { ATTRIBUTES, CERTIFICATIONS, LANGUAGES, PROJECTS, TOOLS, WORKEXPERIENCE } from '../../Config';
 import { IWorkExperience } from '../../models/IWorkExperience';
+import { useEffect, useRef } from 'react';
+import { useLocation } from 'react-router';
 
 
 
 const AboutPageAlt = () => {
+
+    const divRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        if(location.state && location.state.back === true){
+            window.history.replaceState({}, document.title);
+            divRef.current.scrollIntoView();
+        }
+      },[]);
 
     const getIcon = (icon:string) => {
         switch (icon) {
@@ -106,7 +118,7 @@ const AboutPageAlt = () => {
                                 </div>
                             </div>
                             <div className="aboutAlt__rightContent">
-                                <div className='keyAttributes'>
+                                <div className='keyAttributes' >
                                     <Title id="keys" title='Key Attributes' />
                                 </div>
                                 
@@ -121,7 +133,7 @@ const AboutPageAlt = () => {
                                 </div>
                             </div>
                         </div>
-                        <div id="Projects" className='anchor'></div>
+                        <div id="Projects" className='anchor' ref={divRef}></div>
                         <Title id="" title='Projects' />
                         <div className="about__projectsgrid">
                             {

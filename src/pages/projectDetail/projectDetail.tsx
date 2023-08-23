@@ -12,7 +12,7 @@ const ProjectDetail = () => {
         <div className="projectDetail">
             <div className="projectDetail__contentWrap">
                 <div className="projectDetail__header">
-                    <Link onClick={() => navigate(-1)} to={""} style={{marginBottom:'2rem'}}>
+                    <Link onClick={() => navigate("/")} to={""} state={{back:true}} style={{marginBottom:'2rem'}}>
                         <IoMdArrowRoundBack className='projectDetail__back'/>
                     </Link>
                     <div style={{display:'flex', justifyContent:'start', flexDirection:'column', alignItems:'start'}}>
