@@ -48,8 +48,7 @@
 }
 
 .aboutAlt__leftContentGrid{
-    padding-left: 15%;
-    width: 100%;
+    width: 80%;
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -58,6 +57,7 @@
 
 @media (max-width: 1024px) {
     .aboutAlt__leftContentGrid{
+        width: 100%;
          padding-left: 0px;
          justify-content: center;
          align-items: center;
@@ -74,9 +74,11 @@
     text-align: left;
 }
 .aboutAlt__grid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto auto;
+    margin-top: 1rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 5px;
+    width: inherit;
 }
 
 .aboutAlt__grid-OneCol{
@@ -87,8 +89,7 @@
 
 @media (max-width: 1024px) {
     .aboutAlt__grid{
-        grid-template-columns: 1fr 1fr 1fr;
-        width:inherit;
+        justify-content: center;
     }
 }
 

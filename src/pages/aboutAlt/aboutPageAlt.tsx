@@ -16,6 +16,7 @@ import { ATTRIBUTES, CERTIFICATIONS, LANGUAGES, PROJECTS, TOOLS, WORKEXPERIENCE 
 import { IWorkExperience } from '../../models/IWorkExperience';
 
 
+
 const AboutPageAlt = () => {
 
     const getIcon = (icon:string) => {

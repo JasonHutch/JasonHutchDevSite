@@ -51,10 +51,11 @@ export const LANGUAGES: string[] = [
     "C#",
     "Typescript",
     "Python",
+    "PowerShell",
     "SQL",
     "Java",
     "HTML",
-    "CSS",
+    "CSS/SCSS",
 ];
 
 export const TOOLS: string[] = [
@@ -62,9 +63,14 @@ export const TOOLS: string[] = [
     "SPFx",
     "React",
     "Azure",
-    "NumPy",
-    "Spark",
-    "Docker"
+    "Sitecore",
+    "SharePoint",
+    "Power Apps",
+    "Power Automate",
+    "Jira",
+    "Azure DevOps",
+    "Git",
+    "Figma"
 ];
 
 export const CERTIFICATIONS: string[] = [
@@ -75,7 +81,7 @@ export const CERTIFICATIONS: string[] = [
 export const ATTRIBUTES:IAttribute[] = [
     {
         title:"Solution Oriented",
-        description:"I’m always looking to move forward. I believe that feedback is king and work with a fail fast mentality.",
+        description:"I’m always looking to move forward. I believe feedback is king and work with a fail fast mentality.",
         icon:"magic"
     },
     {
@@ -90,7 +96,7 @@ export const ATTRIBUTES:IAttribute[] = [
     },
     {
         title:"Learns By Doing",
-        description:"I believe the best way to learn something is to try things and make mistakes.",
+        description:"I firmly believe the best way to learn something is to tinker, make mistakes, and ask questions.",
         icon:"code"
     }
 ]
@@ -101,46 +107,48 @@ export const PROJECTS:IProject[] = [
         description:"Migrate lists and libraries from SharePoint 2013 to SharePoint Online enviorment.",
         year:"2023",
         responsibilities:[
-            "Conduct sprint demos, showcasing the work of the development team",
-            "Own project scaffolding and development of SPFx webparts and extensions",
+            "Conduct sprint demos, showcasing the work of the development team.",
+            "Own project scaffolding and development of SPFx webparts and extensions.",
+            "Upgrade existing SharePoint sites by re-writting legacy code to leverage SharePoint Framework, React, and Typescript.",
+            "Analyzing source and destination sites to inform structure and content migration from SharePoint 2013 to SharePoint Online Sites. "
         ],
-        technologies:["React","Typescript","ShareGate","SharePoint Online"]    
+        technologies:["React","Typescript","PowerShell","ShareGate","SharePoint Online"]    
     },
     {
         name:"Power Platform Compliance Workflow",
         description:"Leveraged technologies such as Microsoft Power Apps, Power automate, and SharePoint online lists to design and implement compliance workflow system.",
         year:"2022",
         responsibilities:[
-            "Conduct sprint demos, showcasing the work of the development team",
-            "Create a deploment strategy for Power Platform artifacts throughout dev,qa,uat,and production enviorments",
-            "Oversee deployments, ensuring that the develpment teams latest updates and fixes are sucsessfully deployed to each enviorment",
-            "Serve as the main point of contact for the development and QA team",
-            "Analyze the current state of Power Apps / Automate solution and devise a strategy for upgrading the solution with SharePoint best practices in mind",
-            "Provide timely updates on development velocity and assist architect and project manager with communicating timeline updates to the client."
+            "Conducted sprint demos, showcasing the work of the development team.",
+            "Created a deploment strategy for Power Platform artifacts throughout dev,qa,uat,and production enviorments.",
+            "Oversaw deployments, ensuring that the develpment teams latest updates and fixes were sucsessfully deployed to each enviorment.",
+            "Served as the main point of contact for the development and QA team.",
+            "Analyzed the current state of Power Apps / Automate solution and devised a strategy for upgrading the solution with SharePoint best practices in mind.",
+            "Provided timely updates on development velocity and assisted architect and project manager with communicating timeline updates to the client."
         ],
-        technologies:["Power Apps","Power Automate","SharePoint Online"]
+        technologies:["Power Apps","Power Automate","SharePoint Online","PowerShell"]
     },
     {
         name:"KPMG SharePoint Migration and Modernization",
-        description:"Migrate lists and libraries from SharePoint 2013 to SharePoint Online enviorment.",
+        description:"Migrated lists and libraries from SharePoint 2013 to SharePoint Online enviorment.",
         year:"2022",
         responsibilities:[
-            "Perform analysis of SharePoint 2013 sites and determine mitigation strategies for mapping old functionality to new SharePoint Online functionality",
-            "Collaborate with visual and UX designers to consult client on how to fiesably implement SharePoint modernization",
-            "Facilitate real time working sessions with client to demonstrate SharePoint Online capabilities and gather feedback on design and functionality",
+            "Performed analysis of SharePoint 2013 sites and determined mitigation strategies for mapping old functionality to new SharePoint Online functionality.",
+            "Collaborated with visual and UX designers to consult client on how to fiesably implement SharePoint modernization.",
+            "Facilitated real time working sessions with client to demonstrate SharePoint Online capabilities and gather feedback on design and functionality.",
         ],
-        technologies:["SharePoint Online","SharePoint Designer"]
+        technologies:["SharePoint Online","Figma"]
     },
     {
         name:"Comcast Intranet Build",
-        description:"Build a fleet of custom SPFX webparts to be used in new Comcast Intranet.",
+        description:"Built a fleet of custom SPFX webparts to be used in new Comcast Intranet.",
         year:"2021",
         responsibilities:[
-            "Integrating sharepoint data with custom SPFx web parts through REST API calls and React state management.",
-            "Realize component designs using JSX and SCSS, ensuring that the component is responsive and accessible.",
-            "Demo new components to client and gather feedback on functionality and design.",
+            "Integrated sharepoint data with custom SPFx web parts through REST API calls and React state management.",
+            "Realized component designs using JSX and SCSS, ensuring that the component was responsive and accessible.",
+            "Presented new components to client and gathered feedback on functionality and design.",
         ],
-        technologies:["React","Typescript","SCSS","SharePoint Online","SPFx","SCSS"]
+        technologies:["React","Typescript","SCSS","SharePoint Online","SPFx"]
     },
     {
         name:"Children's Health Hospital Website build",
@@ -149,7 +157,7 @@ export const PROJECTS:IProject[] = [
         responsibilities:[
             "Developed custom Sitecore components using .NET MVC and Sitecore Helix architecture.",
             "Built custom front ends for Sitecore component renderings using Scriban templating language.",
-            "Conducted content authoring training sessions with client, teaching them how to configure the new Sitecore components.",
+            "Conducted content authoring training sessions with client, teaching them how to configure the new Sitecore components and relevant data.",
         ],
         technologies:["C#","Sitecore",".NET MVC","Scriban"]
     }

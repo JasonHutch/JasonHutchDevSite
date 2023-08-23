@@ -1,6 +1,7 @@
 import { IoMdArrowRoundBack } from "react-icons/io";
 import './projectDetail.css';
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import ScrollToTop from "../../components/scollToTop/scollToTop";
 
 const ProjectDetail = () => {
     const navigate = useNavigate();
@@ -51,7 +52,9 @@ const ProjectDetail = () => {
 
                 </div> */}
             </div>
+            <ScrollToTop/>
         </div>
+        
     );
 }
 
