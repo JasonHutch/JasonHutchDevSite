@@ -1,0 +1,43 @@
+.homepage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.homepage__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.homepage__avatarWrap{
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height:166px;
+    width:166px;
+}
+
+.homepage__avatarWrap img {
+    filter:grayscale(100%);
+    transition: 0.5s ease;
+}
+
+.homepage__avatarWrap img:hover{
+    transform: scale(1.1);
+    filter:grayscale(0%);
+    transition: all ease-in-out 500ms;
+}
+
+
+.homepage__avatar{
+    border-radius: 100px;
+    height: 157px;
+    width: 157px;
+}
